@@ -1,8 +1,5 @@
-<div class="block">
-	<center>
-		<img src="https://imgur.com/bmEKNfL" alt="Img">
-	</center>
-</div>
+<center><img src="https://imgur.com/bmEKNfL" alt="Img"></center>
+
 
 ### Tutorial Aims
 
