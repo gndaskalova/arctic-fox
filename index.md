@@ -1,4 +1,4 @@
-<center><img src="https://imgur.com/bmEKNfL" alt="Img"></img></center>
+<center><img src="https://i.imgur.com/bmEKNfL.png" alt="Img"></center>
 
 
 ### Tutorial Aims
