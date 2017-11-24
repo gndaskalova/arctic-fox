@@ -1,4 +1,5 @@
-<center><img src="https://i.imgur.com/bmEKNfL.png" alt="Img"></center>
+<center>		<img src="{{ site.baseurl }}/tutheaderbl.png" alt="Img">
+</center>
 
 
 ### Tutorial Aims
