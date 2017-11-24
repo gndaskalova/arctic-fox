@@ -1,5 +1,4 @@
-<center>		<img src="{{ site.baseurl }}/tutheaderbl.png" alt="Img">
-</center>
+<center><img src="{{ site.baseurl }}/tutheaderbl.png" alt="Img"></center>
 
 
 ### Tutorial Aims
@@ -10,34 +9,43 @@
 
 #### <a href="#section3"> 3. The third section</a>
 
-This is some introductory text for your tutorial. Explain the skills that will be learned and why they are important. Set the tutorial in context. In this example tutorial we will be learning how to generate some fake bivariate data in `R` and make a scatter plot.  Normally no more than 4 lines, nobody likes reading lots of text.
+We are using `<a href="#section_number">text</a>` to create anchors within our text - for example when you click on section one, the page will automatically go to where you have put `<a name="section_number"></a>`.
 
-You can get all of the resources for this tutorial from <a href="<GITHUB_URL>" target="_blank">this github repository</a>. Clone and download the repo as a zip file, then unzip it.
+To create subheadings, you can use `#`, e.g. `# Subheading 1` creates a subheading with a large font size. The more hashtags you add, the smaller the text becomes. If you want to make text bold, you can surround it with `__text__`, which creates __text__. For italics, use only one understore around the text, e.g. `_text_`, _text_.
+
+# Subheading 1
+## Subheading 2
+### Subheading 3
+
+This is some introductory text for your tutorial. Explain the skills that will be learned and why they are important. Set the tutorial in context. 
+
+You can get all of the resources for this tutorial from <a href="github_url" target="_blank">this github repository</a>. __Replace `github_url` with the link to your repository.__ Clone and download the repo as a zip file, then unzip it.
 
 <a name="section1"></a>
 
 ## 1. The first section
 
-First, we need to ask the student to open `RStudio`, create a new script by clicking on `File/ New File/ R Script` set the working directory, and load some packages. The packages we will be using are `ggplot2` and `dplyr`. Specifically, from `dplyr` we will be using pipes `%>%` and the `filter()` function. Notice how I surrounded package names, software package names, actions ("File/ New..."), functions and operators in backticks (````) to define them as inline code blocks. This helps these important bits stand out to the reader. Enter the following into your script file to set the working directory and load some packages:
+
+At the beginning of your tutorial you can ask people to open `RStudio`, create a new script by clicking on `File/ New File/ R Script` set the working directory, and load some packages, for example `ggplot2` and `dplyr`. You can surround package names, functions, actions ("File/ New...") and small chunks of code with backticks, which defines them as inline code blocks and makes them stand out among the text, e.g. `ggplot2`.
+
+When you have a larger chunk of code, you can paste the whole code in the `Markdown` document and add three backticks on the line before the code chunks starts and on the line after the code chunks ends. After the three backticks that go before your code chunk starts, you can specify in which language the code  is written, e.g:
 
 ```r
 # Set the working directory
-setwd("~/coding_club/bes_2017")
+setwd("your_filepath")
 
 # Load packages
 library(ggplot2)
 library(dplyr)
 ```
 
-If `library()` returns an error it might be because you haven't installed the package before. To rectify this, run `install.packages("pkg_name")` first, then `library()`.
-
 <a name="section2"></a>
 
 ## 2. The second section
 
-Now that we have set everything up we can make some fake data, `rnorm()` generates samples from a normal distribution. `n` is the number of data points, `mean` is the mean value of the distribution, `sd` is the standard deviation:
+You can add more text and code, e.g.
 
-```
+```r
 # Create fake data
 x_dat <- rnorm(n = 100, mean = 5, sd = 2)  # x data
 y_dat <- rnorm(n = 100, mean = 10, sd = 0.2)  # y data
@@ -67,30 +75,7 @@ At this point it would be a good idea to include an image of what the plot is me
 
 ## 3. The third section
 
-If I'm making a tutorial on `ggplot2` I might want to include a brief table of different plot methods, so students can experiment:
-
-<style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg th{font-family:Arial;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;word-break:normal;}
-</style>
-<table class="tg">
-  <tr>
-    <th>Name</th>
-    <th>Code</th>
-  </tr>
-  <tr>
-    <th>Scatter points</th>
-    <th>`geom_point()`</th>
-  </tr>
-  <tr>
-    <th>Smoothed curves</th>
-    <th>`geom_smooth()`</th>
-  </tr>
-  <tr>
-    <th>Observations connected by line</th>
-    <th>`geom_line()`</th>
-  </tr>
-</table>
+More text, code and images.
 
 This is the end of the tutorial. Summarise what the student has learned, possibly even with a list of learning outcomes. In this tutorial we learned:
 
@@ -98,9 +83,11 @@ This is the end of the tutorial. Summarise what the student has learned, possibl
 ##### - how to create a scatterplot in ggplot2
 ##### - some of the different plot methods in ggplot2
 
-Lastly, I might give some useful links. For more on ggplot2, read the official <a href="https://www.rstudio.com/wp-content/uploads/2015/03/ggplot2-cheatsheet.pdf" target="_blank">ggplot2 cheatsheet</a>.
+We can also provide some useful links, include a contact form and a way to send feedback. 
 
-Everything below this is footer material.
+For more on `ggplot2`, read the official <a href="https://www.rstudio.com/wp-content/uploads/2015/03/ggplot2-cheatsheet.pdf" target="_blank">ggplot2 cheatsheet</a>.
+
+Everything below this is footer material - text and links that appears at the end of all of your tutorials.
 
 <hr>
 <hr>
